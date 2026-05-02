@@ -1,0 +1,318 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "first_name": "Ahmed",
+      "last_name": "Hassan",
+      "email": "ahmed.hassan@example.com",
+      "password": "Pass123!",
+      "gender": "male",
+      "isAdmin": true,
+      "courses": [
+        {
+          "course_name": "JavaScript Basics",
+          "lessons": [
+            "Variables",
+            "Functions",
+            "Loops",
+            "Arrays"
+          ]
+        },
+        {
+          "course_name": "React Intro",
+          "lessons": [
+            "Components",
+            "Props",
+            "State"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "first_name": "Sara",
+      "last_name": "Ali",
+      "email": "sara.ali@example.com",
+      "password": "Sara@456",
+      "gender": "female",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Python Basics",
+          "lessons": [
+            "Syntax",
+            "Data Types",
+            "Conditions"
+          ]
+        },
+        {
+          "course_name": "Machine Learning",
+          "lessons": [
+            "Supervised Learning",
+            "Regression",
+            "Classification"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "first_name": "Omar",
+      "last_name": "Khaled",
+      "email": "omar.khaled@example.com",
+      "password": "Omar789!",
+      "gender": "male",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Databases",
+          "lessons": [
+            "SQL Basics",
+            "Joins",
+            "Indexes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "first_name": "Mona",
+      "last_name": "Ibrahim",
+      "email": "mona.ibrahim@example.com",
+      "password": "MonaPass1",
+      "gender": "female",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "UI/UX Design",
+          "lessons": [
+            "Principles",
+            "Wireframing",
+            "Prototyping"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "first_name": "Youssef",
+      "last_name": "Mahmoud",
+      "email": "youssef.mahmoud@example.com",
+      "password": "Yous123$",
+      "gender": "male",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Node.js",
+          "lessons": [
+            "Modules",
+            "Express",
+            "APIs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "first_name": "Laila",
+      "last_name": "Fathy",
+      "email": "laila.fathy@example.com",
+      "password": "Laila@2024",
+      "gender": "female",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Digital Marketing",
+          "lessons": [
+            "SEO",
+            "Content Marketing",
+            "Analytics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "first_name": "Karim",
+      "last_name": "Adel",
+      "email": "karim.adel@example.com",
+      "password": "KarimPass!",
+      "gender": "male",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "C++ Programming",
+          "lessons": [
+            "Syntax",
+            "Pointers",
+            "OOP"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "first_name": "Nour",
+      "last_name": "Samir",
+      "email": "nour.samir@example.com",
+      "password": "Nour123!",
+      "gender": "female",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Mobile Development",
+          "lessons": [
+            "Flutter Basics",
+            "Widgets",
+            "State Management"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "first_name": "Hassan",
+      "last_name": "Tarek",
+      "email": "hassan.tarek@example.com",
+      "password": "Has@789",
+      "gender": "male",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Cybersecurity",
+          "lessons": [
+            "Networking",
+            "Encryption",
+            "Ethical Hacking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "first_name": "Dina",
+      "last_name": "Wael",
+      "email": "dina.wael@example.com",
+      "password": "DinaPass9",
+      "gender": "female",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Graphic Design",
+          "lessons": [
+            "Photoshop",
+            "Illustrator",
+            "Branding"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "first_name": "Mostafa",
+      "last_name": "Nabil",
+      "email": "mostafa.nabil@example.com",
+      "password": "Mostafa@11",
+      "gender": "male",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "DevOps",
+          "lessons": [
+            "CI/CD",
+            "Docker",
+            "Kubernetes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "first_name": "Huda",
+      "last_name": "Saeed",
+      "email": "huda.saeed@example.com",
+      "password": "Huda#2024",
+      "gender": "female",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Project Management",
+          "lessons": [
+            "Planning",
+            "Execution",
+            "Monitoring"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "first_name": "Ali",
+      "last_name": "Gamal",
+      "email": "ali.gamal@example.com",
+      "password": "AliPass33",
+      "gender": "male",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "AI Fundamentals",
+          "lessons": [
+            "Neural Networks",
+            "Deep Learning",
+            "NLP"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "first_name": "Reem",
+      "last_name": "Ashraf",
+      "email": "reem.ashraf@example.com",
+      "password": "Reem@123",
+      "gender": "female",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Content Writing",
+          "lessons": [
+            "Blogging",
+            "Copywriting",
+            "Editing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "first_name": "Tamer",
+      "last_name": "Hany",
+      "email": "tamer.hany@example.com",
+      "password": "Tamer!2024",
+      "gender": "male",
+      "isAdmin": false,
+      "courses": [
+        {
+          "course_name": "Networking",
+          "lessons": [
+            "OSI Model",
+            "Routing",
+            "Switching"
+          ]
+        }
+      ]
+    },
+    {
+      "first_name": "Mahmoud",
+      "last_name": "Gharib",
+      "email": "h@gmail.com",
+      "password": "123",
+      "gender": "123",
+      "phoneNumber": "132456879789",
+      "isAdmin": false,
+      "courses": [],
+      "id": "3pHUyleDBWU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
