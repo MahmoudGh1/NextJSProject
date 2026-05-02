@@ -27,6 +27,7 @@ const Login = () => {
         const user = users.find((user) => user.email === state.email);
         if (user) {
             localStorage.setItem("user", JSON.stringify(user));
+			document.cookie = `user=${JSON.stringify(user)}; path=/`;
             if (user.isAdmin) {
                 return router.push("/admindashboard");
             }
