@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --navy: #0f1b2d;
+  --navy-mid: #1e3148;
+  --accent: #c8973a;
+  --accent-light: #f5e8ce;
+  --bg: #ffffff;
+  --bg-off: #f8f7f4;
+  --text: #1a1a1a;
+  --text-muted: #6b6b6b;
+  --border: #e4e1da;
+  --radius: 10px;
+}
+
+.main {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+
+.hero {
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 100px 6vw 80px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 14px;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  margin-bottom: 28px;
+}
+
+.heroTitle {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+  font-weight: 600;
+  line-height: 1.12;
+  color: var(--navy);
+  margin: 0 0 24px;
+}
+
+.heroTitle em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.heroSub {
+  font-size: 1.08rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 0 40px;
+}
+
+.heroBtns {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 28px;
+  background: var(--navy);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btnPrimary:hover {
+  background: var(--navy-mid);
+  transform: translateY(-1px);
+}
+
+.btnOutline {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 28px;
+  background: transparent;
+  color: var(--navy);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1.5px solid var(--navy);
+  border-radius: var(--radius);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btnOutline:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+.cta {
+  background: var(--navy);
+  padding: 90px 6vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.ctaTitle {
+  font-family: 'Lora', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.ctaSub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+  margin: 0 0 12px;
+  font-weight: 300;
+}
+
+.cta .btnPrimary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.cta .btnPrimary:hover {
+  background: #b5832e;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 80px 5vw 60px;
+    min-height: auto;
+  }
+
+}

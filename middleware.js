@@ -8,7 +8,6 @@ export function middleware(request) {
     const { pathname } = request.nextUrl;
 
     const isProtected = protectedRoutes.some((route) => pathname.startsWith(route));
-
     if (isProtected && !user) {
         return NextResponse.redirect(new URL("/auth/login", request.url));
     }
@@ -17,5 +16,5 @@ export function middleware(request) {
 }
 
 export const config = {
-    matcher: ["/admindashboard/:path*", "/userdashboard/:path*", "/courses/:path*"],
+    matcher: ["/admindashboard", "/userdashboard", "/courses"],
 };
