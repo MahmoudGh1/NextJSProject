@@ -20,7 +20,7 @@ const Navbar = () => {
 
 	const handleLogout = async () => {
         localStorage.removeItem("user");
-		document.cookie = "user=; path=/; expires=Sat, 01 Jan 2025 00:00:00 GMT";
+		document.cookie = "user=; path=/; expires=Sat, 01 Jan 2026 00:00:00 GMT";
 		setLoggedUser(null);
         await authClient.signOut({
             fetchOptions: {
