@@ -1,5 +1,5 @@
 import { dbConnect } from "@/app/lib/mongoDB.js";
-import User from "@/app/lib/models/User";
+import User from "@/app/lib/model/user.js";
 
 export async function PUT(req, { params }) {
 	let { id, courseName } = await params;
