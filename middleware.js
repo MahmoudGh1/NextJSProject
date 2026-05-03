@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const protectedRoutes = ["/admindashboard", "/userdashboard", "/courses"];
+const protectedRoutes = ["/admindashboard", "/userdashboard", "/courses", "/api"];
 // https://medium.com/@turingvang/nextjs-middleware-protected-routes-bcb3df06db0c
 
 export function middleware(request) {
