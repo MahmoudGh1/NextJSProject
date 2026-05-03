@@ -10,7 +10,7 @@ const AdminCustom = () => {
 
 	useEffect(() => {
 		async function getData() {
-			const res = await fetch("/api/users");
+			const res = await fetch(`${process.env.BASE_URL}/api/users`);
 			const data = await res.json();
 			setUsers(data);
 		}

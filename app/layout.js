@@ -6,7 +6,7 @@ import Navbar from "./components/navbar";
 import ThemeRegistry from "./components/ThemeRegistry";
 import Footer from "./components/footer";
 
-
+export const dynamic = "force-dynamic";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
@@ -31,3 +31,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+// https://www.kologojosias.com/tutorials/nextjs-kubernetes-econnrefused-build-time-fetch-solutions

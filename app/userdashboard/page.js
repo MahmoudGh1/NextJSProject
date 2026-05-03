@@ -21,7 +21,7 @@ const Page = () => {
 	}, []);
 
 	async function refreshUser(id) {
-		const res = await fetch(`/api/users/${id}`);
+		const res = await fetch(`${process.env.BASE_URL}/api/users/${id}`);
 		const updated = await res.json();
 		localStorage.setItem("user", JSON.stringify(updated));
 		setRegisteredUser(updated);
@@ -33,7 +33,7 @@ const Page = () => {
 
 	async function handleEditSubmit() {
 		const { id, courses, ...userData } = editUser;
-		await fetch(`/api/users/${id}`, {
+		await fetch(`${process.env.BASE_URL}/api/users/${id}`, {
 			method: "PUT",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(userData),
@@ -45,7 +45,7 @@ const Page = () => {
 	async function handleDeleteCourse(userId, courseName) {
 		const check = confirm(`Delete course "${courseName}"?`)
 		if (!check) return;
-		await fetch(`/api/users/${userId}/courses/${encodeURIComponent(courseName)}`, {
+		await fetch(`${process.env.BASE_URL}/api/users/${userId}/courses/${encodeURIComponent(courseName)}`, {
 			method: "DELETE",
 		});
 		refreshUser(userId);
@@ -55,7 +55,7 @@ const Page = () => {
 		const course = {
 			course_name: newCourse.course_name,
 			lessons: newCourse.lessons.split(",").map((lesson) => lesson.trim())};
-		await fetch(`/api/users/${addCourseUser._id}/courses`, {
+		await fetch(`${process.env.BASE_URL}/api/users/${addCourseUser._id}/courses`, {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(course),

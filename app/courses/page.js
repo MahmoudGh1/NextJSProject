@@ -3,7 +3,7 @@ import StickyHeadTable from "../components/table";
 
 const Page = async () => {
 	async function getData() {
-		const res = await fetch("/api/users", {
+		const res = await fetch(`${process.env.BASE_URL}/api/users`, {
 			cache: "force-cache",
 		});
 		return res.json();
