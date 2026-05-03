@@ -8,7 +8,7 @@ const Page = ({ params }) => {
     const [registeredUser, setRegisteredUser] = useState("");
     useEffect(() => {
         async function getData() {
-            const res = await fetch(`${process.env.BASE_URL}/api/users`, {});
+            const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/users`, {});
             const data = await res.json();
             setUsers(data);
             const storedUser = localStorage.getItem("users");
