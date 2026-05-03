@@ -13,6 +13,10 @@ const Login = () => {
         async function getData() {
             const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/users`);
             const data = await res.json();
+			if (Array.isArray(data)) {
+	        } else {
+	            console.error("API error:", data);
+	        }
             setUsers(data);
         }
         getData();
